@@ -63,7 +63,7 @@ For your first milestone, describe what your project is and how you plan to buil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fxcpncMTSeU" title="Raghav V. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-This is my starter project, a Retro Arcade console. 
+This Retro Arcade console was my starter project, and it involved a solid amount of soldering. The hardest part was when I soldered the power switch in crooked and spent about an hour desoldering it to fix the mistake. That was the only mishap on the project, though, and now I'm ready to move on to my main project. Overall, this was a great way to get more soldering practice under my belt.
 
 
 <!--

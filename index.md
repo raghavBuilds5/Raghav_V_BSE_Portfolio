@@ -1,18 +1,19 @@
 # My Hexapod Robot project.
-```HTML
+<!--
  Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
-```HTML 
+ 
 <!--- This is an HTML comment in Markdown -->
 <!--- Anything between these symbols will not render on the published site -->
-```
+-->
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Raghav V | Princeton Day School | ~ | Incoming Junior
-```HTML
+
+<!--
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
 ![Headstone Image](logo.svg)
@@ -55,7 +56,8 @@ For your first milestone, describe what your project is and how you plan to buil
 - Technical progress you've made so far
 - Challenges you're facing and solving in your future milestones
 - What your plan is to complete your project
-```
+
+-->
 # Starter project
 
 
@@ -64,7 +66,7 @@ For your first milestone, describe what your project is and how you plan to buil
 This is my starter project, a Retro Arcade console. 
 
 
-```HTML
+<!--
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
@@ -102,7 +104,7 @@ One of the best parts about Github is that you can view how other people set up 
 
 To watch the BSE tutorial on how to create a portfolio, click here.
 
-```
+-->
 
 
 

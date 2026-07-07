@@ -48,7 +48,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-![Fully wired hexapod on the bench](images/IMG_4075.jpeg)
+![Fully wired hexapod on the bench](gh-pages/IMG_4075.jpeg)
 
 My first milestone is getting the hexapod to stand on its own. 18 servos holding the body up at a stable height without tipping. I'm not there yet, but I've built the chassis, mounted the hip and leg servos to the acrylic frame, wired all 18 servos to the correct ports on the Freenove Crawling Robot Controller (an Arduino MEGA-compatible board), and gotten them all powered and responding to commands. The remaining steps before I can call the milestone done are calibrating each servo to its true zero, flipping the direction of the servos on the mirrored side of the body so 180° means the same thing everywhere, and writing the stand pose.
 

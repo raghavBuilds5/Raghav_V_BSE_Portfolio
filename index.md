@@ -66,9 +66,9 @@ After that, all 18 servos powered up together and I could write positions to any
 
 The other issue I had to solve was power. My kit was designed for two 18650 lithium cells, but I didn't have access to those, so I switched to a Tenergy 7.2V NiMH pack. To make that work I had to cut and re-solder two of the power traces on the underside of the controller board so the pack could feed the regulators through the right path. The original solder joints and the re-soldered ones are shown below.
 
-**What I've learned so far:**
+*What I've learned so far:*
 - How to read a schematic well enough to debug a real hardware problem instead of just guessing.
-- The difference between the logic-level 5V rail (from the Arduino's onboard regulator) and the higher-current servo rail (from the TD1583 buck converters).
+- When to ask for help
 - That a Raspberry Pi is a small computer, not really a microcontroller in the same sense as an Arduino — different tool for different jobs.
 - More soldering and desoldering practice, this time on a populated board where I had to be careful not to damage nearby components.
 

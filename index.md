@@ -56,7 +56,7 @@ The hardest part so far was a power problem I didn't understand at first. This t
 
 I eventually traced it to the schematic. The board uses two TD1583 buck converters (U3 and U4) to step the battery voltage down for the servo bus, and their EN (enable) pins are wired to the MEGA's PK6/A14 and PK7/A15. If those pins aren't driven HIGH, the regulators stay off and no power reaches the servo power rails, which is exactly what my multimeter was telling me.
 
-![Servo power supply schematic showing PK6/A14 and PK7/A15 on the EN pins of U3 and U4](images/schem.png)
+![Servo power supply schematic showing PK6/A14 and PK7/A15 on the EN pins of U3 and U4](schem.png)
 
 Adding these four lines to setup() fixed everything:
 
@@ -76,9 +76,9 @@ After that, all 18 servos powered up together and I could write positions to any
 
 The other issue I had to solve was power. My kit was designed for two 18650 lithium cells, but I didn't have access to those, so I switched to a Tenergy 7.2V NiMH pack. To make that work I had to cut and re-solder two of the power traces on the underside of the controller board so the pack could feed the regulators through the right path. The original solder joints and the re-soldered ones are shown below.
 
-![Original solder joints on the controller board](images/ogSolder.png)
+![Original solder joints on the controller board](ogSolder.png)
 
-![Re-soldered power path for the NiMH battery pack](images/reSold.png)
+![Re-soldered power path for the NiMH battery pack](reSold.png)
 
 *What I've learned so far:*
 

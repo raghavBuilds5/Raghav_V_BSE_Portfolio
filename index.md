@@ -86,16 +86,19 @@ void loop() {
 }
 ```
 ```
+-->
 # Bill of Materials
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Freenove Hexapod Robot Kit (V3) | Full mechanical + electronics kit: acrylic frame, 18× MG90S servos, Freenove Crawling Robot Controller (Arduino MEGA-compatible), screws, wiring | ~$150 | <a href="https://www.freenove.com/">Link</a> |
+| Tenergy 7.2V 3000mAh NiMH Battery Pack | Main power source for the servos and controller; replaces the 18650 cells the kit was designed around | ~$25 | <a href="https://www.tenergy.com/">Link</a> |
+| MG90S 9g Metal Gear Servo (x18) | The joint motors — 3 per leg (coxa, femur, tibia) across 6 legs | ~$3 each | <a href="https://www.amazon.com/">Link</a> |
+| Freenove Crawling Robot Controller V3.2 | Arduino MEGA-based board with 18 servo headers and onboard TD1583 buck converters for the servo rail | Included in kit | <a href="https://www.freenove.com/">Link</a> |
+| Tamiya-style battery connector | For connecting the NiMH pack to the controller | ~$3 | <a href="https://www.amazon.com/">Link</a> |
+| USB-B cable | Programming and serial communication with the MEGA | ~$5 | <a href="https://www.amazon.com/">Link</a> |
 
+<!--
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
 - [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)

@@ -48,7 +48,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
 # Second Milestone
 
-<iframe width="1059" height="595" src="https://www.youtube.com/embed/{{VIDEO_ID}}" title="Raghav V. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315"src="https://www.youtube.com/embed/{{VIDEO_ID}}" title="Raghav V. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 My second milestone is getting the hexapod to walk using a tripod gait, and driving it around with a remote. In a tripod gait, three legs stay planted while the other set of three lift, swing forward, and set down, so at any moment the robot is a stable tripod. Which is why it's called a tripod gait.
 Doing that with 18 servos means every joint has to hit its commanded angle at the right time, or the body lurches instead of walking.

@@ -50,7 +50,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
 ![Fully wired hexapod on the bench](IMG_4075.jpeg)
 
-My first milestone is getting the hexapod to stand on its own. 18 servos holding the body up at a stable height without tipping. I'm not there yet, but I've built the chassis, mounted the hip and leg servos to the acrylic frame, wired all 18 servos to the correct ports on the Freenove Crawling Robot Controller (an Arduino MEGA-compatible board), and gotten them all powered and responding to commands. Then I calibrated each servo to its true zero, and wrote the stand pose.
+My first milestone is getting the hexapod to stand on its own. 18 servos holding the body up at a stable height without tipping. I've built the chassis, mounted the hip and leg servos to the acrylic frame, wired all 18 servos to the correct ports on the Freenove Crawling Robot Controller (an Arduino MEGA-compatible board), and gotten them all powered and responding to commands. Then I calibrated each servo to its true zero, and wrote the stand pose.
 
 The hardest part so far was a power problem I didn't understand at first. This took me a while to solve, and at one point i just used the 5v to power each servo one by one and then zero them and mount them, since I couldn't get any of them to respond when I wrote to their signal pins. I could blink an LED off the same pins, and I could drive a servo if I bypassed the board and powered it directly from the 5V rail, so I knew the microcontroller and the servos themselves were fine. My multimeter read 0V at the servo power pins on the board even though the battery was connected and the 5V rail was live.
 

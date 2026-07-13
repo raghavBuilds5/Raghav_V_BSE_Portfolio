@@ -44,7 +44,7 @@ For your second milestone, explain what you've worked on since your previous mil
 - What has been surprising about the project so far
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone 
---># First Milestone
+-->
 
 # Second Milestone
 
@@ -75,7 +75,7 @@ Once calibration was solid, the remote control side was straightforward: map inp
 -finding a place to mount the battery pack and then i can move on to modifications!
 
 
-
+# First Milestone
 <iframe width="560" height="315"  src="https://www.youtube.com/embed/MLcp6MFE4rc" title="Raghav V. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ![Fully wired hexapod on the bench](IMG_4075.jpeg)

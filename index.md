@@ -50,26 +50,27 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315"src="https://www.youtube.com/embed/{{VIDEO_ID}}" title="Raghav V. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-My second milestone is getting the hexapod to walk using a tripod gait, and driving it around with a remote. In a tripod gait, three legs stay planted while the other set of three lift, swing forward, and set down, so at any moment the robot is a stable tripod. Which is why it's called a tripod gait.
+My second milestone is getting the hexapod to walk using a tripod gait, and controlling its movement with a remote. 
+In a tripod gait, three legs stay planted while the other set of three lift, swing forward, and set down, so at any moment the robot is a stable tripod. 
+Which is why it's called a tripod gait.
 Doing that with 18 servos means every joint has to hit its commanded angle at the right time, or the body lurches instead of walking.
 
-Since Milestone 1, I've moved from a static stand pose to coordinated motion across all six legs, layered remote control on top of it, and recalibrated the servos over and over until the gait actually looked like walking.
+Since Milestone 1, I've moved from a  stand pose to coordinated motion across all six legs, layered remote control on top of it, and recalibrated the servos over and over until the gait actually looked like walking.
 
-For the gait and inverse kinematics I used the FNHR library that ships with the kit. I went back and forth on this in my notes, since writing Inverse Kinematics from scratch felt more like *my* project, but the library is a lot of code and the more useful exercise turned out to be reading through it until I understood what each function was doing and how to drive the robot with it, rather than reinventing math that was already there. 
+For the gait and inverse kinematics I used the FNHR library that ships with the kit. I went back and forth on this in my notes, since writing Inverse Kinematics from scratch felt more handa on, but the library is a lot of code and the more useful exercise turned out to be reading through it until I understood what each function was doing and how to drive the robot with it, rather than reinventing code that was already there. 
 
 The hardest part of this milestone was calibration. I calibrated the servos, tried to walk, watched a leg drag or the body tilt, and went back to recalibrate. I did this several times. A few things I learned the slow way:
 
-- A servo commanded to 90° isn't at true mechanical neutral until *you* make it so — every servo needs its own offset, and small errors that look fine in a stand pose become obvious the moment the robot tries to shift its weight.
-- Mirrored left/right legs move opposite directions for the same command, so symmetric motion means inverting the range on one side (writing `180 − θ` instead of `θ`).
+- A servo written to 90° isn't always at 90° until *you* make it so, every servo needs its own offset, and small errors that look fine in a stand pose can be revealed when a robot tries to walk.
+- - Mirrored left/right legs move opposite directions for the same command, so symmetric motion means inverting the range on one side (writing `180 − θ` instead of `θ`).
 - A gait that looks correct in the air, with the robot held up, can still fail on the ground once real weight and friction are involved. You have to test walking to know if calibration is actually right.
 
 Once calibration was solid, the remote control side was straightforward: map inputs to gait direction and speed parameters in the library, and let the Inverse Kinematics handle the joint angles.
 
 *What I've learned so far:*
 
-- Calibration isn't a one-time step. It's something you come back to whenever the robot's behavior doesn't match what you're commanding.
-- Reading and understanding a library you didn't write is a real skill, and sometimes more valuable than writing everything from scratch.
-- The difference between "works when held up" and "works on the ground" is bigger than I expected.
+- Calibration is something you come back to whenever the robot's behavior doesn't match what you're commanding.
+- Reading and understanding a library you didn't write is a real skill, and sometimes more valuable and efficeent than writing everything from scratch.
 
 **What's left for the final milestone:** 
 -finding a place to mount the battery pack and then i can move on to modifications!

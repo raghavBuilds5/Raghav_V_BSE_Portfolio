@@ -60,7 +60,7 @@ For the gait and inverse kinematics I used the FNHR library that ships with the 
 
 The hardest part of this milestone was calibration. I calibrated the servos, tried to walk, watched a leg drag or the body tilt, and went back to recalibrate. I did this several times. A few things I learned the slow way:
 
-- A servo written to 90° isn't always at 90° until *you* make it so, every servo needs its own offset, and small errors that look fine in a stand pose can be revealed when a robot tries to walk.
+- A servo written to 90° isn't always at 90° until you make sure it is, every servo needs its own offset, and small errors that look fine in a stand pose can be revealed when a robot tries to walk.
 - - Mirrored left/right legs move opposite directions for the same command, so symmetric motion means inverting the range on one side (writing `180 − θ` instead of `θ`).
 - A gait that looks correct in the air, with the robot held up, can still fail on the ground once real weight and friction are involved. You have to test walking to know if calibration is actually right.
 

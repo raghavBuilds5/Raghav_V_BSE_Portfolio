@@ -13,38 +13,47 @@ You should comment out all portions of your portfolio that you have not complete
 |:--:|:--:|:--:|:--:|
 | Raghav V | Princeton Day School | ~ | Incoming Junior
 
-<!--
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
-
-![Headstone Image](logo.svg)
-  
 # Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+**[Replace with your final milestone video embedding]**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="YOUR_VIDEO_URL_HERE" title="Raghav V. Final Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
+My final milestone brought together everything: a fully functional hexapod with a secure battery mount and two modifications that extend its capabilities beyond basic walking.
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+**What I accomplished since Milestone 2:**
 
+*Milestone 3 — Battery Mount:*
+I designed and 3D-printed a custom battery holder for the Tenergy 7.2V NiMH pack. The first version was off by about 2 cm in width, so I went back into the CAD, pulled dimensions directly from the hexapod's DXF files instead of estimating, and printed v2. That one fit. The battery now sits securely on the chassis instead of dangling off wires, which cleaned up the whole build and made the robot more stable and portable.
 
+*Modification 1 — Ultrasonic Sensor for Obstacle Detection:*
+I added an HC-SR04 ultrasonic sensor to the front of the hexapod so it can detect obstacles. I designed and printed a mount for the sensor, wired it to the controller, and wrote code to read distance measurements. The challenge was integrating this with the remote control — I had to understand how the bot was receiving IR signals from the remote without using the default library, so I wrote my own receiver logic that could handle both remote commands and sensor input simultaneously. I also implemented a rolling average filter to smooth out noisy readings, which made the obstacle detection more reliable (though slightly less responsive).
 
-# Second Milestone
+*Modification 2 — OLED Display:*
+I mounted a GME 12864-13 OLED screen to display real-time status information like sensor readings, gait state, or battery status. Getting the display working required learning a new library and figuring out how to refresh the screen without slowing down the main control loop.
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+**Biggest challenges and triumphs at BSE:**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+- **The servo power issue (Week 1):** Spending days debugging why servos wouldn't respond, only to discover I needed to enable two buck converters by writing HIGH to pins A14 and A15. That forced me to actually read the schematic instead of guessing, and it paid off.
+- **Calibration (ongoing):** I recalibrated the servos three times. Small offsets that looked fine in a stand pose would cause the bot to lurch or drag a leg when walking. I learned that calibration isn't a one-time task — you revisit it whenever behavior doesn't match commands.
+- **Working within vs. building from scratch:** I debated whether to use the FNHR library or write my own inverse kinematics. I chose to use the library, but only after reading through it to understand what each function was doing. That turned out to be the right call — understanding existing code is a real skill, and sometimes more efficient than reinventing it.
+- **CAD iteration:** When my first battery mount didn't fit, I didn't get frustrated — I went back, found the actual dimensions from the DXF files, and printed v2. Work smarter, not harder.
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
--->
+**Key topics I learned:**
+
+- How to read schematics to debug hardware (buck converters, enable pins).
+- Servo calibration and the math behind mirrored joints (writing `180 − θ` for symmetric motion).
+- Working with libraries: reading unfamiliar code, understanding it, then using it effectively.
+- Sensor integration and signal filtering (rolling averages for the ultrasonic sensor).
+- IR communication and how to decode remote signals without the default library.
+- CAD design iteration and the value of using reference files instead of guessing dimensions.
+- Soldering and desoldering on populated boards without damaging nearby components.
+
+**What I hope to learn next:**
+
+I want to dive deeper into computer vision and autonomous navigation. The ultrasonic sensor is a start, but adding a camera and implementing object recognition or SLAM (simultaneous localization and mapping) would be the next big step. I'm also curious about more advanced gait algorithms — maybe implementing a wave gait or adaptive gaits that respond to terrain. And honestly, I'd like to revisit inverse kinematics from scratch now that I understand the problem better, just to prove to myself I can do it.
+
+This project taught me that hardware is messy, calibration is never done, and sometimes the best move is to understand and use what's already there instead of building everything yourself. I'm leaving BSE with a walking, obstacle-avoiding hexapod and the confidence to tackle whatever robotics project comes next.
 
 # Second Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LdXhoI_4gq4" title="Raghav V. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

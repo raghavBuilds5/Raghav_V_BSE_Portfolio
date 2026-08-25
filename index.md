@@ -15,9 +15,7 @@ You should comment out all portions of your portfolio that you have not complete
 
 # Final Milestone
 
-**[Replace with your final milestone video embedding]**
-
-<!-- <iframe width="560" height="315" src="YOUR_VIDEO_URL_HERE" title="Raghav V. Final Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9uxOdUDsBhw" title="Raghav V. Final Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 My final milestone brought together everything: a fully functional hexapod with a secure battery mount and two modifications that extend its capabilities beyond basic walking.
 

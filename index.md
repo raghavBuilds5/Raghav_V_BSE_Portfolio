@@ -11,7 +11,7 @@ You should comment out all portions of your portfolio that you have not complete
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Raghav V | Princeton Day School | ~ | Incoming Junior
+| Raghav V | Princeton Day School | Aerospace Engineering | Incoming Junior
 
 # Final Milestone
 
